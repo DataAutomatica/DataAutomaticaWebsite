@@ -1,0 +1,13 @@
+{
+  "name": "Data Automatica",
+  "version": "1.0.0",
+  "description": "Technology Collective for People-Centered Code and Design",
+  "author": "Data Automatica",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-shell": "~0.4.0",
+    "grunt-recess": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
