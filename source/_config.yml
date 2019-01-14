@@ -35,10 +35,10 @@ navbar_color: "caribbean-green"
 # Image Hero
 # -------------------------
 
-title:            "Data Automatica"
+title:            "Data / Automatica"
 tagline:      	  "Technology Collective for People-Driven Code and Design."
 
-# Features Thumbs
+# Mission Thumbs
 # -------------------------
 
 features_thumbs:
@@ -71,8 +71,8 @@ features_thumbs:
 # -------------------------
 
 blockquote:
-   text: "We develop online marketing solutions that help enterprises accurately identify the consumers that truly need their services."
-   tagline: "Serving the community since 2014"
+   text: "Technology Collective for People-Driven Code and Design."
+   tagline: "Technology Collective for People-Driven Code and Design."
    button_text: "Read More"
    button_url: "#_"
 
