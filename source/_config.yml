@@ -15,15 +15,15 @@ logo_small_devices: "media/logo/logo_small.png"
 # -------------------------
 
 navbar_links:
-  - title: "Home"
+  - title: "Mission"
     url: "#image-hero"
-  - title: "Features"
-    url: "#features"
-  - title: "Services"
-    url: "#services"
   - title: "Work"
+    url: "#features"
+  - title: "Projects"
+    url: "#services"
+  - title: "Zines"
     url: "#work"
-  - title: "Pricing Tables"
+  - title: "Workshops"
     url: "#pricing-tables"
   - title: "Contact"
     url: "#contact"
@@ -35,8 +35,8 @@ navbar_color: "caribbean-green"
 # Image Hero
 # -------------------------
 
-title:            "Kunstnerisk"
-tagline:      	  "a responsive bootstrap three theme for jekyll"
+title:            "Data Automatica"
+tagline:      	  "Technology Collective for People-Driven Code and Design."
 
 # Features Thumbs
 # -------------------------
