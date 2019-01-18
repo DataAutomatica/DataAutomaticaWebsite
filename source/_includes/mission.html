@@ -11,15 +11,11 @@
           </h2>
           <hr class="margin-top-50">
           <h2 class="text-center margin-bottom-50 padding-top-0">{{site.mission_subcopy}}</h2>
-          <ul>
             {% for mission_item in site.mission_items %}
-            <li>
-              <h3>
+              <h2 class="text-left margin-bottom-50">
                 {{ mission_item.item }}
-              </h3>
-            </li>
+              </h2>
             {% endfor%}
-          </ul>
 				</div>
 			</div>
 		</div>

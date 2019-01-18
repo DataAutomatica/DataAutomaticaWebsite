@@ -29,8 +29,8 @@ module.exports = function(grunt) {
                 './source/_less/modules/*.less',
                 './source/_less/*.less',
                 './source/_js/*.js',
-                './source/_config.yml',
-                './source/index.html'
+                './source/index.html',
+                './_config.yml',
             ],
 
             tasks: ['shell:gruntConcat', 'shell:gruntRecessApp', 'shell:jekyllServe'],
