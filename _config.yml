@@ -38,8 +38,16 @@ navbar_color: "caribbean-green"
 title:            "Data / Automatica"
 tagline:      	  "Technology Collective for People-Driven Code and Design."
 
-# Mission Thumbs
-# -------------------------
+# Mission
+#--------------------------
+
+mission_title: "Our mission"
+mission_description: "Our mission is to facilitate community-led, people-centered, and sustainable outcomes with code, research, and design."
+mission_subcopy: "We strive to apply:"
+mission_items:
+  - item: "A <b>critical</b> mindset into all decisions that utilize technology and data."
+  - item: "A <b>community-led</b> and <b>justice-driven</b> approach into all design solutions."
+  - item: "A <b>collaborative</b>, <b>organized</b>, and <b>enjoyable</b> working process into every project."
 
 features_thumbs:
   - title: "Clean Code"
@@ -66,6 +74,7 @@ features_thumbs:
   - title: "Fullscreen Background"
     icon: "expand"
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam a illum, ducimus quod impedit architecto distinctio dolorem amet dignissimos ad corrupti! Fugit aut earum in sit, placeat quis consequatur."
+
 
 # Blockquote
 # -------------------------
