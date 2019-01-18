@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             gruntRecessApp: {
                 command: 'grunt recess:app'
             },
-            
+
             gruntConcat: {
                 command: 'grunt concat'
             }
@@ -23,18 +23,18 @@ module.exports = function(grunt) {
         // Watch task.
         watch: {
             files: [
-                '*.html',
-                '_includes/*.html',
-                '_layouts/*.html',
-                '_less/modules/*.less',
-                '_less/*.less',
-                '_js/*.js',
-                '_config.yml',
-                'index.html'
+                './source/*.html',
+                './source/_includes/*.html',
+                './source/_layouts/*.html',
+                './source/_less/modules/*.less',
+                './source/_less/*.less',
+                './source/_js/*.js',
+                './source/_config.yml',
+                './source/index.html'
             ],
-            
+
             tasks: ['shell:gruntConcat', 'shell:gruntRecessApp', 'shell:jekyllServe'],
-            
+
             options: {
                 interrupt: true,
                 atBegin: true
@@ -45,12 +45,12 @@ module.exports = function(grunt) {
         recess: {
           options: {
                 compile: true,
-                compress: true 
+                compress: true
           },
 
           app: {
-            src: ['_less/main.less'],
-            dest: './css/main.css'
+            src: ['./source/_less/main.less'],
+            dest: './source/css/main.css'
           }
         },
 
@@ -58,25 +58,25 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    './_js/console-errors.js',
-                    './_js/window-onload.js',
-                    './_js/document-ready.js',
-                    './_js/window-resize.js',
-                    './_js/widgets-config.js',
-                    './_js/google-maps.js'
+                    './source/_js/console-errors.js',
+                    './source/_js/window-onload.js',
+                    './source/_js/document-ready.js',
+                    './source/_js/window-resize.js',
+                    './source/_js/widgets-config.js',
+                    './source/_js/google-maps.js'
                 ],
 
-              dest: './js/main.js',
+              dest: './source/js/main.js',
             }
         }
     });
-    
+
     // NPM Dependencies.
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-contrib-concat');
- 
+
     // Tasks.
     grunt.registerTask('default', ['shell']);
     grunt.registerTask('app', ['recess:app']);
