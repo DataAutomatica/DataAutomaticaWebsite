@@ -9,7 +9,7 @@
         <h2 class="text-center margin-bottom-100">
           {{site.mission_description}}
         </h2>
-        <h2 id="animation" class="text-center margin-bottom-10 padding-top-0">{{site.mission_subcopy}}</h2>
+        <h2 id="mission-animation" class="text-center margin-bottom-10 padding-top-0">{{site.mission_subcopy}}</h2>
           {% for mission_item in site.mission_items %}
             <div class="mission-item-container">
               <div id="mission-color-block{{forloop.index}}" class="color-block">
@@ -37,16 +37,19 @@ $(function() {
   var timeline3 = new TimelineMax();
 
   var missionTween1 = TweenMax.from('#mission-item-1', 0.5, {
-    backgroundColor: "#00CC99",
-    transform: "translateX(-9999px) rotate(300deg)"
+    color: "#EEE",
+    fontWeight: 600
+    // transform: "translateX(-9999px) rotate(300deg)"
   });
   var missionTween2 = TweenMax.from('#mission-item-2', 0.5, {
-    backgroundColor: "#00CC99",
-    transform: "translateX(9999px) rotate(300deg)"
+    color: "#EEE",
+    fontWeight: 600
+    // transform: "translateX(9999px) rotate(300deg)"
   });
   var missionTween3 = TweenMax.from('#mission-item-3', 0.5, {
-    backgroundColor: "#00CC99",
-    transform: "translateX(-9999px) rotate(-300deg)"
+    color: "#EEE",
+    fontWeight: 600
+    // transform: "translateX(-9999px) rotate(-300deg)"
   });
 
   var blockTween1 = TweenMax.to('#mission-color-block1', 0.5, {
@@ -60,9 +63,9 @@ $(function() {
   });
 
   var scene1 = new ScrollMagic.Scene({
-      triggerElement: '#mission',
-      duration: 175,
-      offset: 225,
+      triggerElement: '#mission-color-block1',
+      duration: 50,
+      offset: -50,
     })
     .addTo(controller)
   timeline1
@@ -73,9 +76,9 @@ $(function() {
   scene1.setTween(timeline1)
   scene1.addTo(controller)
   var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#mission',
-      duration: 175,
-      offset: 275
+      triggerElement: '#mission-color-block2',
+      duration: 50,
+      offset: -50
     })
 
   timeline2
@@ -86,9 +89,9 @@ $(function() {
   scene2.addTo(controller)
 
   var scene3 = new ScrollMagic.Scene({
-      triggerElement: '#mission',
-      duration: 150,
-      offset: 300
+      triggerElement: '#mission-color-block3',
+      duration: 50,
+      offset: -50
     }).setTween(missionTween3)
 
     timeline3
