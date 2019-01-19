@@ -45,9 +45,9 @@ mission_title: "Our mission"
 mission_description: "Our mission is to facilitate community-led, people-centered, and sustainable outcomes with <b>code</b>, <b>research</b>, and <b>design</b>."
 mission_subcopy: "We strive to provide:<hr/>"
 mission_items:
-  - item: "A critical mindset for all decisions that utilize technology and data."
-  - item: "A community-led and justice-driven approach for all design solutions."
-  - item: "A collaborative, organized, and enjoyable working process for every project."
+  - item: "A critical approach towards all decisions surrounding technology and data."
+  - item: "A commitment to community-led and justice-driven design solutions."
+  - item: "A collaborative, organized, and enjoyable process in everything we do."
 
 # features_thumbs:
 #   - title: "Clean Code"
@@ -98,6 +98,24 @@ services:
  - title: "Digital Strategy & Technology Consulting"
    icon: "magic"
    description: "We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and collaboration. We advise on how to utilize technology in ways that minimize harm and maximize value."
+
+# Clients
+# -------------------------
+# https://image.online-convert.com/convert-to-svg
+clients:
+  - name: "Justworks"
+    icon: "justworks.svg"
+    alticon: "justworks.jpg"
+    link: "https://justworks.com"
+  - name: "The Intercept"
+    icon: "intercept.svg"
+    alticon: "intercept.png"
+    backgroundColor: "#29DCB2"
+    link: "https://theintercept.com"
+  - name: "ANHD"
+    icon: "anhd-black.svg"
+    alticon: "anhd-black.jpg"
+    link: "https://anhd.org"
 
 # Work Mosaic
 # -------------------------

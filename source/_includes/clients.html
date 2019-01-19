@@ -1,0 +1,56 @@
+<section id="clients" class="section-content main-background-color">
+
+<div class="container margin-bottom-100">
+		<div class="row">
+			<div class="col-lg-12">
+        <h1 class="text-center margin-top-50">Our clients.</h1>
+				<hr class="margin-bottom-50">
+
+				<div class="margin-top-80 margin-bottom-50">
+					<div class="row">
+						{% for client in site.clients %}
+            <a class="client-container" href="{{client.link}}" target="_blank">
+              <div class="image-container">
+                <img src="media/clienticons/{{client.icon}}"/>
+                <div class="image-container-background" {% if client.backgroundColor %} style="background-color: {{client.backgroundColor}};" {%endif%}>
+                </div>
+              </div>
+              <div class="image-container-alt">
+                <img src="media/clienticons/{{client.alticon}}"/>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<script>
+  document.querySelectorAll('.image-container-alt').forEach((image) => {
+    image.addEventListener('mousemove', (e) => {
+      let imageX = -(e.clientX - (e.target.getBoundingClientRect().left + (e.target.getBoundingClientRect().width / 2)))
+      let imageY = -(e.clientY - (e.target.getBoundingClientRect().top + (e.target.getBoundingClientRect().height / 2)))
+
+      if (imageX > 0) {
+        imageX = Math.min(imageX, 75)
+
+      } else {
+        imageX = Math.max(imageX, -75)
+      }
+
+      if (imageY > 0) {
+        imageY = Math.min(imageY, 75)
+      } else {
+        imageY = Math.max(imageY, -75)
+      }
+      e.currentTarget.querySelector('img').style.transform = 'translate(' + imageX + 'px, ' + imageY + 'px) scale(1.5)'
+    })
+
+    image.addEventListener('mouseout', (e) => {
+      e.currentTarget.querySelector('img').style.transform = 'translate(0px, 0px) scale(1.5)'
+    })
+
+  })
+</script>

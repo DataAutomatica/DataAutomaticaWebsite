@@ -155,7 +155,7 @@
 			<div class="col-lg-12">
 				<h1 class="text-center">Our mission</h1>
 				<hr class="margin-bottom-50">
-        <h2 class="text-center margin-bottom-100">
+        <h2 class="text-center margin-bottom-50">
           Our mission is to facilitate community-led, people-centered, and sustainable outcomes with <b>code</b>, <b>research</b>, and <b>design</b>.
         </h2>
         <h2 id="mission-animation" class="text-center margin-bottom-10 padding-top-0">We strive to provide:<hr/></h2>
@@ -165,7 +165,7 @@
 
               </div>
               <h2 id="mission-item-1"class="text-center margin-top-30 margin-bottom-30">
-                A critical mindset for all decisions that utilize technology and data.
+                A critical approach towards all decisions surrounding technology and data.
               </h2>
             </div>
           
@@ -174,7 +174,7 @@
 
               </div>
               <h2 id="mission-item-2"class="text-center margin-top-30 margin-bottom-30">
-                A community-led and justice-driven approach for all design solutions.
+                A commitment to community-led and justice-driven design solutions.
               </h2>
             </div>
           
@@ -183,7 +183,7 @@
 
               </div>
               <h2 id="mission-item-3"class="text-center margin-top-30 margin-bottom-30">
-                A collaborative, organized, and enjoyable working process for every project.
+                A collaborative, organized, and enjoyable process in everything we do.
               </h2>
             </div>
           
@@ -258,7 +258,7 @@ $(function() {
   var scene3 = new ScrollMagic.Scene({
       triggerElement: '#mission-color-block3',
       duration: 50,
-      offset: -50
+      offset: -25
     }).setTween(missionTween3)
 
     timeline3
@@ -359,35 +359,117 @@ $(function() {
 
 		<!-- End Services -->
 
+    <!-- Clients -->
+    <section id="clients" class="section-content main-background-color">
+
+<div class="container margin-bottom-100">
+		<div class="row">
+			<div class="col-lg-12">
+        <h1 class="text-center margin-top-50">Our clients.</h1>
+				<hr class="margin-bottom-50">
+
+				<div class="margin-top-80 margin-bottom-50">
+					<div class="row">
+						
+            <a class="client-container" href="https://justworks.com" target="_blank">
+              <div class="image-container">
+                <img src="media/clienticons/justworks.svg"/>
+                <div class="image-container-background" >
+                </div>
+              </div>
+              <div class="image-container-alt">
+                <img src="media/clienticons/justworks.jpg"/>
+              </div>
+            </a>
+            
+            <a class="client-container" href="https://theintercept.com" target="_blank">
+              <div class="image-container">
+                <img src="media/clienticons/intercept.svg"/>
+                <div class="image-container-background"  style="background-color: #29DCB2;" >
+                </div>
+              </div>
+              <div class="image-container-alt">
+                <img src="media/clienticons/intercept.png"/>
+              </div>
+            </a>
+            
+            <a class="client-container" href="https://anhd.org" target="_blank">
+              <div class="image-container">
+                <img src="media/clienticons/anhd-black.svg"/>
+                <div class="image-container-background" >
+                </div>
+              </div>
+              <div class="image-container-alt">
+                <img src="media/clienticons/anhd-black.jpg"/>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<script>
+  document.querySelectorAll('.image-container-alt').forEach((image) => {
+    image.addEventListener('mousemove', (e) => {
+      let imageX = -(e.clientX - (e.target.getBoundingClientRect().left + (e.target.getBoundingClientRect().width / 2)))
+      let imageY = -(e.clientY - (e.target.getBoundingClientRect().top + (e.target.getBoundingClientRect().height / 2)))
+
+      if (imageX > 0) {
+        imageX = Math.min(imageX, 75)
+
+      } else {
+        imageX = Math.max(imageX, -75)
+      }
+
+      if (imageY > 0) {
+        imageY = Math.min(imageY, 75)
+      } else {
+        imageY = Math.max(imageY, -75)
+      }
+      e.currentTarget.querySelector('img').style.transform = 'translate(' + imageX + 'px, ' + imageY + 'px) scale(1.5)'
+    })
+
+    image.addEventListener('mouseout', (e) => {
+      e.currentTarget.querySelector('img').style.transform = 'translate(0px, 0px) scale(1.5)'
+    })
+
+  })
+</script>
+
+    <!-- End Clients -->
+
 		<!-- Contact -->
 				<section id="contact" class="section-content main-background-color">
-			<img class="top-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" alt="">
+		<!--	<img class="top-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" alt=""> -->
 
 			<div class="container padding-top-50 padding-bottom-100">
 				<div class="row">
 					<div class="col-lg-12">
 
-						<h1 class="text-center">Contact.</h1>
-						<hr class="margin-bottom-50">
+						<h1 class="text-center text-white">Contact.</h1>
+						<hr class="margin-bottom-80 text-white">
 
-						<div class="col-lg-4 col-md-4 col-sm-4">
+<!--					<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="text-center">
 								<i class="fa fa-3x fa-phone-square text-brand-main-color margin-top-20 margin-bottom-20"></i>
 								<h4></h4>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="col-lg-6 col-md-6 col-sm-6">
 							<div class="text-center">
-								<i class="fa fa-3x fa-envelope-o text-brand-main-color margin-top-20 margin-bottom-20"></i>
-								<h4><a href="mailto:hello@automatica.love" class="text-brand-main-color">hello@automatica.love</a></h4>
+								<i class="fa fa-3x fa-envelope-o text-white margin-top-20 margin-bottom-20"></i>
+								<h4><a href="mailto:hello@automatica.love" class="text-white bold">hello@automatica.love</a></h4>
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="col-lg-6 col-md-6 col-sm-6">
 							<div class="text-center">
-								<i class="fa fa-3x fa-building-o text-brand-main-color margin-top-20 margin-bottom-20"></i>
-								<h4>Brooklyn, NYC</h4>
+								<i class="fa fa-3x fa-building-o text-white margin-top-20 margin-bottom-20"></i>
+								<h4 class="text-white bold">Brooklyn, NYC</h4>
 							</div>
 						</div>
 

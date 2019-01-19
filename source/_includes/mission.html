@@ -6,7 +6,7 @@
 			<div class="col-lg-12">
 				<h1 class="text-center">{{site.mission_title}}</h1>
 				<hr class="margin-bottom-50">
-        <h2 class="text-center margin-bottom-100">
+        <h2 class="text-center margin-bottom-50">
           {{site.mission_description}}
         </h2>
         <h2 id="mission-animation" class="text-center margin-bottom-10 padding-top-0">{{site.mission_subcopy}}</h2>
@@ -91,7 +91,7 @@ $(function() {
   var scene3 = new ScrollMagic.Scene({
       triggerElement: '#mission-color-block3',
       duration: 50,
-      offset: -50
+      offset: -25
     }).setTween(missionTween3)
 
     timeline3

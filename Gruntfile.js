@@ -29,6 +29,7 @@ module.exports = function(grunt) {
                 './source/_less/modules/*.less',
                 './source/_less/*.less',
                 './source/_js/*.js',
+                './source/media/*',
                 './source/index.html',
                 './_config.yml',
             ],
