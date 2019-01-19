@@ -15,12 +15,12 @@ logo_small_devices: "media/logo/logo_small.png"
 # -------------------------
 
 navbar_links:
-  - title: "Mission"
-    url: "#image-hero"
-  - title: "Work"
-    url: "#features"
-  - title: "Projects"
+  - title: "Our Mission"
+    url: "#mission"
+  - title: "What We Do"
     url: "#services"
+  - title: "Clients"
+    url: "#clients"
   - title: "Zines"
     url: "#work"
   - title: "Workshops"
@@ -43,11 +43,11 @@ tagline:      	  "Technology Collective for People-Driven Code and Design."
 
 mission_title: "Our mission"
 mission_description: "Our mission is to facilitate community-led, people-centered, and sustainable outcomes with <b>code</b>, <b>research</b>, and <b>design</b>."
-mission_subcopy: "We strive to apply:"
+mission_subcopy: "We strive to provide:<hr/>"
 mission_items:
-  - item: "A <b>critical</b> mindset into all decisions that utilize technology and data."
-  - item: "A <b>community-led</b> and <b>justice-driven</b> approach into all design solutions."
-  - item: "A <b>collaborative</b>, <b>organized</b>, and <b>enjoyable</b> working process into every project."
+  - item: "A critical mindset for all decisions that utilize technology and data."
+  - item: "A community-led and justice-driven approach for all design solutions."
+  - item: "A collaborative, organized, and enjoyable working process for every project."
 
 # features_thumbs:
 #   - title: "Clean Code"
@@ -91,10 +91,10 @@ blockquote:
 services:
  - title: "Web Development & Data Services"
    icon: "desktop"
-   description: "We build and maintain reliable, modern, and scalable full-stack web applications in a variety of ways with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
+   description: "We build and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
  - title: "UX/UI Research & Design"
    icon: "heart"
-   description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of those who will be using the product first."
+   description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
  - title: "Digital Strategy & Technology Consulting"
    icon: "magic"
    description: "We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and collaboration. We advise on how to utilize technology in ways that minimize harm and maximize value."
@@ -151,7 +151,7 @@ contact:
 # -------------------------
 
 # Dependencies
-pygments: 		  false
+highlighter: 		  pygments
 
 # Permalinks
 permalink: 		  none

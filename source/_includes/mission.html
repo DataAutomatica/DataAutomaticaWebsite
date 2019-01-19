@@ -1,24 +1,28 @@
-	<section id="features" class="section-content main-background-color">
-		<img class="top-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" alt="">
+<section id="mission" class="section-content main-background-color">
+	<img class="top-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" alt="">
 
-		<div class="container padding-top-50 padding-bottom-50">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="text-center">{{site.mission_title}}</h1>
-					<hr class="margin-bottom-50">
-          <h2 class="text-center">
-            {{site.mission_description}}
-          </h2>
-          <hr class="margin-top-50">
-          <h2 class="text-center margin-bottom-50 padding-top-0">{{site.mission_subcopy}}</h2>
-            {% for mission_item in site.mission_items %}
-              <h2 class="text-left margin-bottom-50">
+	<div class="container padding-top-50 padding-bottom-50">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="text-center">{{site.mission_title}}</h1>
+				<hr class="margin-bottom-50">
+        <h2 class="text-center margin-bottom-100">
+          {{site.mission_description}}
+        </h2>
+        <h2 id="animation" class="text-center margin-bottom-10 padding-top-0">{{site.mission_subcopy}}</h2>
+          {% for mission_item in site.mission_items %}
+            <div class="mission-item-container">
+              <div id="mission-color-block{{forloop.index}}" class="color-block">
+
+              </div>
+              <h2 id="mission-item-{{forloop.index}}"class="text-center margin-top-30 margin-bottom-30">
                 {{ mission_item.item }}
               </h2>
-            {% endfor%}
-				</div>
+            </div>
+          {% endfor%}
 			</div>
 		</div>
+	</div>
 
-		<img class="bottom-diagonal hidden-xs hidden-sm" src="media/img/bottom-diagonal.png" alt="">
-	</section>
+	<img class="bottom-diagonal hidden-xs hidden-sm" src="media/img/bottom-diagonal.png" alt="">
+</section>

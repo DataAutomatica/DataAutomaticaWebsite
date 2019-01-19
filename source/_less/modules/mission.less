@@ -1,0 +1,25 @@
+#mission {
+  h1 {
+    font-size: 70px;
+    font-weight: 500;
+  }
+  .mission-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    position: relative;
+
+    @media only screen and (min-width: @screen-sm-min) {
+      height: 100px;
+    }
+  }
+  .color-block {
+    background-color: @brand-main-color;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+
+}
