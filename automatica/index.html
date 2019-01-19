@@ -117,9 +117,10 @@
 			</div>
 		</div>
 
-		<img class="bottom-diagonal-navbar hidden-xs hidden-sm" src="media/img/navbar-diagonal-caribbean-green.png" alt="">
+		<img class="bottom-diagonal-navbar hidden-xs hidden-sm" style="top: -1px;" src="media/img/navbar-diagonal-custom-color.svg" alt="">
 	</div>
 	<!-- End Navbar -->
+
 		<!-- End Main Navigation -->
 
 		<!-- Hero -->
@@ -328,7 +329,7 @@ $(function() {
 		<!-- End Home Blockquote -->
 
 		<!-- Services -->
-		<section id="services" class="section-content main-background-color padding-top-50">
+		<section id="services" class="section-content main-background-color padding-top-50 padding-bottom-50">
 
 	<div id="services-animation" class="container">
 		<div class="row">
@@ -348,7 +349,7 @@ $(function() {
 								</div>
 								<div class="col-lg-9 col-md-9">
 									<h3 class="text-main-brand-color light-bold">Web Development & Data Services</h3>
-									<p>We build and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets.</p>
+									<p class="service-description">We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets.</p>
 								</div>
 							</div>
 						</div>
@@ -362,7 +363,7 @@ $(function() {
 								</div>
 								<div class="col-lg-9 col-md-9">
 									<h3 class="text-main-brand-color light-bold">UX/UI Research & Design</h3>
-									<p>Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first.</p>
+									<p class="service-description">Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first.</p>
 								</div>
 							</div>
 						</div>
@@ -376,7 +377,7 @@ $(function() {
 								</div>
 								<div class="col-lg-9 col-md-9">
 									<h3 class="text-main-brand-color light-bold">Digital Strategy & Technology Consulting</h3>
-									<p>We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and collaboration. We advise on how to utilize technology in ways that minimize harm and maximize value.</p>
+									<p class="service-description">We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and sustainability. We advise on how to utilize technology in ways that minimize harm and maximize value.</p>
 								</div>
 							</div>
 						</div>
@@ -405,6 +406,60 @@ $(function() {
     .setTween(tween)
     .addTo(controller)
   })
+</script>
+
+<script>
+
+  (function() {
+    var mainController = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller();
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: '#services',
+      offset: 0,
+    })
+    .addTo(mainController)
+    .on('start', () => {
+      tweenItUp()
+    })
+    .on('leave', () => {
+      controller = new ScrollMagic.Controller();
+    })
+
+
+    var splitRandomNth = (str) => {
+      var getRandom = (max) => { return Math.floor(Math.random() * max) + 1  }
+      var a = str.split(' '), b = [];
+      while(a.length) b.push(a.splice(0, getRandom(4)).join(' '));
+      return b;
+    }
+
+    function spanifyText(text) {
+    return splitRandomNth(text).map((character) => {
+        return "<span class='service-description-char'>"+character+"</span>"
+      }).join(' ')
+    }
+
+    function tweenItUp() {
+      document.querySelector('#services').querySelectorAll('.service-description').forEach((description) => {
+        const spannedText = spanifyText(description.textContent)
+        description.innerHTML = spannedText
+
+        description.querySelectorAll('.service-description-char').forEach((charEl) => {
+          var scene = new ScrollMagic.Scene({
+            triggerElement: '#services',
+            offset: 0,
+          })
+          .addTo(controller)
+          var tween = TweenMax.from(charEl, Math.random() * 3, {
+            opacity: 0
+          }).delay(Math.random() * 2)
+
+          scene.setTween(tween)
+        })
+      })
+    }
+  })()
 </script>
 
 		<!-- End Services -->

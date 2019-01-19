@@ -30,7 +30,7 @@ navbar_links:
 
 # Navigation Background Color.
 # Options: caribbean-green, summer-sky, golden-poppy, deep-carmine-pink
-navbar_color: "caribbean-green"
+navbar_color: "custom-color"
 
 # Image Hero
 # -------------------------
@@ -91,13 +91,13 @@ blockquote:
 services:
  - title: "Web Development & Data Services"
    icon: "desktop"
-   description: "We build and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
+   description: "We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
  - title: "UX/UI Research & Design"
    icon: "heart"
    description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
  - title: "Digital Strategy & Technology Consulting"
    icon: "magic"
-   description: "We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and collaboration. We advise on how to utilize technology in ways that minimize harm and maximize value."
+   description: "We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and sustainability. We advise on how to utilize technology in ways that minimize harm and maximize value."
 
 # Clients
 # -------------------------
