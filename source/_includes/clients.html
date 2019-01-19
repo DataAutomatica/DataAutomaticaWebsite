@@ -1,29 +1,30 @@
 <section id="clients" class="section-content main-background-color">
+<div id="clients-animation">
+  <div class="container margin-top-100 margin-bottom-100">
+  		<div class="row">
+  			<div class="col-lg-12">
+          <h1 class="text-center margin-top-50">Our clients.</h1>
+  				<hr class="margin-bottom-50">
 
-<div class="container margin-bottom-100">
-		<div class="row">
-			<div class="col-lg-12">
-        <h1 class="text-center margin-top-50">Our clients.</h1>
-				<hr class="margin-bottom-50">
-
-				<div class="margin-top-80 margin-bottom-50">
-					<div class="row">
-						{% for client in site.clients %}
-            <a class="client-container" href="{{client.link}}" target="_blank">
-              <div class="image-container">
-                <img src="media/clienticons/{{client.icon}}"/>
-                <div class="image-container-background" {% if client.backgroundColor %} style="background-color: {{client.backgroundColor}};" {%endif%}>
+  				<div class="margin-top-80 margin-bottom-50">
+  					<div class="row">
+  						{% for client in site.clients %}
+              <a class="client-container" href="{{client.link}}" target="_blank">
+                <div class="image-container">
+                  <img src="media/clienticons/{{client.icon}}"/>
+                  <div class="image-container-background" {% if client.backgroundColor %} style="background-color: {{client.backgroundColor}};" {%endif%}>
+                  </div>
                 </div>
-              </div>
-              <div class="image-container-alt">
-                <img src="media/clienticons/{{client.alticon}}"/>
-              </div>
-            </a>
-            {% endfor %}
+                <div class="image-container-alt">
+                  <img src="media/clienticons/{{client.alticon}}"/>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+  </div>
 </div>
 </section>
 
@@ -52,5 +53,23 @@
       e.currentTarget.querySelector('img').style.transform = 'translate(0px, 0px) scale(1.5)'
     })
 
+  })
+</script>
+
+<script>
+$(function() {
+  var controller = new ScrollMagic.Controller();
+  var tween = TweenMax.from('#clients-animation', 1, {
+      // transform: "translateY(-1999px)",
+      opacity: 0
+    });
+
+    new ScrollMagic.Scene({
+      triggerElement: '#clients',
+      // reverse: false,
+      offset: 0,
+    })
+    .setTween(tween)
+    .addTo(controller)
   })
 </script>

@@ -1,0 +1,28 @@
+<section id="picture-divider-animtion" class="blockquote fullscreen-content divider-fullscreen ">
+  <img class="bottom-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" style="transform: rotateX(180deg);" alt="">
+	<div class="fullscreen-image background-image-01" data-bottom-top="background-position-y: 200px" data-0-top="background-position-y: 0px" data-top-bottom="background-position-y: -200px"></div>
+
+	<div class="container padding-top-100 padding-bottom-200">
+
+	</div>
+  <img class="top-diagonal hidden-xs hidden-sm" src="media/img/bottom-diagonal.png" style="transform: rotateX(180deg);" alt="">
+
+</section>
+
+    <script>
+    $(function() {
+      var controller = new ScrollMagic.Controller();
+      var tween = TweenMax.from('#picture-divider-animtion', 2, {
+          // transform: "translateY(-1999px)",
+          opacity: 0
+        });
+
+        new ScrollMagic.Scene({
+          triggerElement: '#picture-divider-animtion',
+          // reverse: false,
+          offset: 0,
+        })
+        .setTween(tween)
+        .addTo(controller)
+      })
+    </script>

@@ -1,7 +1,6 @@
-<section id="services" class="section-content main-background-color">
-	<img class="top-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" alt="">
+<section id="services" class="section-content main-background-color padding-top-50">
 
-	<div class="container">
+	<div id="services-animation" class="container">
 		<div class="row">
 			<div class="col-lg-12">
 
@@ -30,6 +29,22 @@
 			</div>
 		</div>
 	</div>
-
-	<img class="bottom-diagonal hidden-xs hidden-sm" src="media/img/bottom-diagonal.png" alt="">
 </section>
+
+<script>
+$(function() {
+  var controller = new ScrollMagic.Controller();
+  var tween = TweenMax.from('#services-animation', 1, {
+      // transform: "translateY(-1999px)",
+      opacity: 0
+    });
+
+    new ScrollMagic.Scene({
+      triggerElement: '#services',
+      // reverse: false,
+      offset: 0,
+    })
+    .setTween(tween)
+    .addTo(controller)
+  })
+</script>
