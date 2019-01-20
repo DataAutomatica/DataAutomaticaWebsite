@@ -106,15 +106,15 @@ var widgetsConfig = function() {
 	});
 
 	// Skrollr init
-	if (matchMedia('(min-width: 1140px)').matches) {
-		skrollr.init( {
-			forceHeight: false
+	if (matchMedia('(min-width: 1140px)').matches) { 
+		skrollr.init( { 
+			forceHeight: false 
 		});
 	}
 
 	// Tooltips
 	var $allTooltips = $('[rel=tooltip]');
-	$allTooltips.tooltip({placement: 'top'}).css('z-index', 2080);
+	$allTooltips.tooltip({placement: 'top'}).css('z-index', 2080);	
 
 }
 
@@ -134,3 +134,4 @@ var repositionScrollDownArrow = function() {
 	scrollDownArrowTop  = windowHeight - ($scrollDownArrow.height()*2) + "px";
 	$scrollDownArrow.css({ position : 'relative', top : scrollDownArrowTop });
 }
+

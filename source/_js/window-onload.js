@@ -2,7 +2,7 @@
    Window On Load
    ========================================================================== */
 
-$(window).load(function() {
+$(window).on('load', function() {
 
 	// Main variables
 	var windowHeight, windowWidth, welcomeTop;
