@@ -11,6 +11,10 @@ module.exports = function(grunt) {
                 command: 'jekyll serve'
             },
 
+            jekyllBuild: {
+                command: 'jekyll build'
+            },
+
             gruntRecessApp: {
                 command: 'grunt recess:app'
             },
@@ -55,6 +59,15 @@ module.exports = function(grunt) {
           }
         },
 
+        build: {
+          tasks: ['shell:gruntConcat', 'shell:gruntRecessApp', 'shell:jekyllBuild'],
+
+          options: {
+              interrupt: true,
+              atBegin: true
+          }
+        },
+
         // Concat for the JS files.
         concat: {
             dist: {
@@ -76,9 +89,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-recess');
+
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Tasks.
     grunt.registerTask('default', ['shell']);
     grunt.registerTask('app', ['recess:app']);
+    grunt.registerTask('build', ['recess:app']);
+
 };
