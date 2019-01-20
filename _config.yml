@@ -96,12 +96,14 @@ services:
    icon: "heart"
    description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
  - title: "Digital Strategy & Technology Consulting"
-   icon: "magic"
-   description: "We advocate for responsible, grounded, and sustainable technology decisions that value empathy, justice, and sustainability. We advise on how to utilize technology in ways that minimize harm and maximize value."
+   icon: "eye"
+   description: "We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value."
 
 # Clients
 # -------------------------
 # https://image.online-convert.com/convert-to-svg
+clients_header: "Our clients"
+clients_subcopy: "We've worked some great people, teams, organizations."
 clients:
   - name: "Justworks"
     icon: "justworks.svg"
@@ -110,7 +112,7 @@ clients:
   - name: "The Intercept"
     icon: "intercept.svg"
     alticon: "intercept.png"
-    backgroundColor: "#61FF7E"
+    backgroundColor: "#FFE0B5"
     link: "https://theintercept.com"
   - name: "ANHD"
     icon: "anhd-black.svg"

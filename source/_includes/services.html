@@ -1,9 +1,7 @@
 <section id="services" class="section-content main-background-color padding-top-50 padding-bottom-50">
-
 	<div id="services-animation" class="container">
 		<div class="row">
 			<div class="col-lg-12">
-
 				<h1 class="text-center margin-top-50">What we do</h1>
 				<hr class="margin-bottom-50 border-brand-secondary-color">
 
@@ -11,17 +9,35 @@
 					<div class="row">
 						{% for service in site.services %}
 						<!-- Single Service -->
-						<div class="col-lg-4 col-md-4 col-sm-4 padding-top-20">
-							<div class="row">
-								<div class="col-lg-3 col-md-3">
-									<i class="fa fa-{{ service.icon }} fa-5x text-brand-main-color margin-top-20"></i>
-								</div>
-								<div class="col-lg-9 col-md-9">
-									<h3 class="text-main-brand-color light-bold">{{ service.title }}</h3>
-									<p class="service-description">{{ service.description }}</p>
-								</div>
-							</div>
-						</div>
+              {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+              {% if thecycle =='odd' %}
+    						<div class="col-lg-12 col-md-12 col-sm-12 padding-top-100">
+    							<div class="row">
+    								<div class="col-lg-3 col-md-3">
+    									<i class="fa fa-{{ service.icon }} fa-10x text-brand-secondary-color margin-top-20"></i>
+    								</div>
+    								<div class="col-lg-9 col-md-9">
+    									<h3 class="text-main-brand-color light-bold text-right">{{ service.title }}</h3>
+    									<h3 class="service-description text-right">{{ service.description }}</h3>
+    								</div>
+    							</div>
+    						</div>
+              {% else %}
+                <div class="col-lg-12 col-md-12 col-sm-12 padding-top-100">
+                  <div class="hidden-md hidden-lg">
+                    <i class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20"></i>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-9">
+                      <h3 class="text-main-brand-color light-bold">{{ service.title }}</h3>
+                      <h3 class="service-description">{{ service.description }}</h3>
+                    </div>
+                    <div class="hidden-sm hidden-xs col-md-offset-1 col-lg-2 col-md-2">
+                      <i class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20"></i>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
 						<!-- End Single Service -->
 						{% endfor %}
 					</div>
@@ -35,13 +51,11 @@
 $(function() {
   var controller = new ScrollMagic.Controller();
   var tween = TweenMax.from('#services-animation', 1, {
-      // transform: "translateY(-1999px)",
       opacity: 0
     });
 
     new ScrollMagic.Scene({
       triggerElement: '#services',
-      // reverse: false,
       offset: 0,
     })
     .setTween(tween)
@@ -88,13 +102,14 @@ $(function() {
 
         description.querySelectorAll('.service-description-char').forEach((charEl) => {
           var scene = new ScrollMagic.Scene({
-            triggerElement: '#services',
-            offset: 0,
+            triggerElement: description.parentElement,
+            offset: -200,
           })
           .addTo(controller)
-          var tween = TweenMax.from(charEl, Math.random() * 3, {
-            opacity: 0
-          }).delay(Math.random() * 2)
+          var tween = TweenMax.from(charEl, Math.random() * 2, {
+            opacity: 0,
+            transform: "rotateY(90deg)"
+          }).delay(Math.random() * 3)
 
           scene.setTween(tween)
         })
