@@ -25,8 +25,8 @@ navbar_links:
     url: "#contact"
   - title: "|"
     url: "javascript:void(0)"
-  # - title: "JustUs Automatica"
-  #   url: "https://justus.automatica.love"
+  - title: "JustUs Automatica"
+    url: "https://justus.automatica.love"
 
 # Navigation Background Color.
 # Options: caribbean-green, summer-sky, golden-poppy, deep-carmine-pink
