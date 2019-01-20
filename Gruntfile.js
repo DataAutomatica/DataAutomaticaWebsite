@@ -95,6 +95,6 @@ module.exports = function(grunt) {
     // Tasks.
     grunt.registerTask('default', ['shell']);
     grunt.registerTask('app', ['recess:app']);
-    grunt.registerTask('build', ['recess:app']);
+    grunt.registerTask('build', ['shell:gruntConcat', 'shell:gruntRecessApp', 'shell:jekyllBuild']);
 
 };
