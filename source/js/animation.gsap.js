@@ -2,8 +2,8 @@
  * @file ScrollMagic GSAP Animation Plugin.
  *
  * requires: GSAP ~1.14
- * Powered by the Greensock Animation Platform (GSAP): http://www.greensock.com/js
- * Greensock License info at http://www.greensock.com/licensing/
+ * Powered by the Greensock Animation Platform (GSAP): https:////www.greensock.com/js
+ * Greensock License info at https:////www.greensock.com/licensing/
  */
 /**
  * This plugin is meant to be used in conjunction with the Greensock Animation Plattform.
@@ -13,7 +13,7 @@
  * The most basic requirement is `TweenLite`.
  *
  * To have access to this extension, please include `plugins/animation.gsap.js`.
- * @requires {@link http://greensock.com/gsap|GSAP ~1.14.x}
+ * @requires {@link https:////greensock.com/gsap|GSAP ~1.14.x}
  * @mixin animation.GSAP
  */
 (function (root, factory) {
