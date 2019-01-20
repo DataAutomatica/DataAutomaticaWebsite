@@ -37,7 +37,7 @@ navbar_color: "custom-color"
 
 title:            "Data / Automatica"
 tagline:      	  "Technology Collective for People-Driven Code and Design."
-
+alt: "A cool rainbow colored computer in a dark room."
 # Mission
 #--------------------------
 
@@ -160,12 +160,14 @@ work_thumbs:
 # -------------------------
 
 contact:
-   latitude: "37.3321722"
-   longitude: "-122.0305748"
-   marker_title: "Data Automatica"
-   marker_address: "Brooklyn, NYC"
-   phone_number: ""
-   email_address: "hello@automatica.love"
+  title: "Get in touch!"
+  subcopy: "We're based out of Brooklyn, NY and love going for coffee."
+  latitude: "37.3321722"
+  longitude: "-122.0305748"
+  marker_title: "Data Automatica"
+  marker_address: "Brooklyn, NY"
+  phone_number: ""
+  email_address: "hello@automatica.love"
 
 # Configuration
 # -------------------------
