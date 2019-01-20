@@ -21,10 +21,6 @@ navbar_links:
     url: "#services"
   - title: "Clients"
     url: "#clients"
-  - title: "Zines"
-    url: "#work"
-  - title: "Workshops"
-    url: "#pricing-tables"
   - title: "Contact"
     url: "#contact"
 
