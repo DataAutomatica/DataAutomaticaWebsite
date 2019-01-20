@@ -8,7 +8,12 @@
 
 a {
      cursor: pointer;
+     color: @link-color;
      text-decoration: none !important;
+}
+
+a:hover {
+  color: darken(@link-color, 15%);
 }
 
 .bold {
@@ -90,6 +95,14 @@ p {
      color: @brand-main-color;
 }
 
-.text-block {
+.text-black {
   color: @brand-black;
+}
+
+.text-brand-secondary-color {
+  color: @brand-secondary-color;
+}
+
+.text-brand-tertiary-color {
+  color: @brand-tertiary-color;
 }

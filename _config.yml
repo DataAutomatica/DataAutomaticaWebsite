@@ -43,7 +43,7 @@ tagline:      	  "Technology Collective for People-Driven Code and Design."
 
 mission_title: "Our mission"
 mission_description: "Our mission is to facilitate community-led, people-centered, and sustainable outcomes with <b>code</b>, <b>research</b>, and <b>design</b>."
-mission_subcopy: "We provide:<hr/>"
+mission_subcopy: "We provide:"
 mission_items:
   - item: "A critical approach towards all decisions surrounding technology and data."
   - item: "A commitment to community-led and justice-driven design solutions."
