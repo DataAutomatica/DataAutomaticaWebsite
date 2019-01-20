@@ -1,4 +1,14 @@
 #mission {
+  margin: 100px 0;
+
+  @media only screen and (min-width: @screen-sm-min) {
+    margin: 50px 0;
+  }
+
+  @media only screen and (min-width: @screen-md-min) {
+    margin: 100px 0;
+  }
+
   h1 {
     font-size: 70px;
   }
@@ -17,6 +27,10 @@
     @media only screen and (min-width: @screen-sm-min) {
       height: 120px;
     }
+  }
+
+  .mission-item {
+    padding: 0 8px;
   }
   .color-block {
     background-color: @brand-tertiary-color;

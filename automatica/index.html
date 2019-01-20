@@ -146,16 +146,16 @@
 				</div>
 			</div>
 		</div>
+    <img class="top-diagonal reversed-diagonal hidden-xs hidden-sm" src="media/img/navbar-diagonal-custom-white.svg" alt="">
 	</section>
 
 		<!-- End Hero -->
 
 		<!-- Features -->
 		<section id="mission" class="section-content main-background-color">
-  <img class="top-diagonal hidden-xs hidden-sm" src="media/img/top-diagonal.png" alt="">
   <div id="mission-animation">
 
-  	<div class="container padding-top-50 padding-bottom-50">
+  	<div class="container">
   		<div class="row">
   			<div class="col-lg-12">
   				<h1 class="text-center">Our mission</h1>
@@ -169,7 +169,7 @@
                 <div id="mission-color-block1" class="color-block">
 
                 </div>
-                <h2 id="mission-item-1"class="text-center margin-top-50 margin-bottom-30">
+                <h2 id="mission-item-1"class="text-center margin-top-50 margin-bottom-30 mission-item">
                   A critical approach towards all decisions surrounding technology and data.
                 </h2>
               </div>
@@ -178,7 +178,7 @@
                 <div id="mission-color-block2" class="color-block">
 
                 </div>
-                <h2 id="mission-item-2"class="text-center margin-top-50 margin-bottom-30">
+                <h2 id="mission-item-2"class="text-center margin-top-50 margin-bottom-30 mission-item">
                   A commitment to community-led and justice-driven design solutions.
                 </h2>
               </div>
@@ -187,7 +187,7 @@
                 <div id="mission-color-block3" class="color-block">
 
                 </div>
-                <h2 id="mission-item-3"class="text-center margin-top-50 margin-bottom-30">
+                <h2 id="mission-item-3"class="text-center margin-top-50 margin-bottom-30 mission-item">
                   A collaborative, organized, and enjoyable process in everything we do.
                 </h2>
               </div>
@@ -209,15 +209,18 @@ $(function() {
 
   var missionTween1 = TweenMax.from('#mission-item-1', 0.3, {
     color: "#EEE",
-    fontWeight: 600
+    fontWeight: 500,
+    padding: 0
   });
   var missionTween2 = TweenMax.from('#mission-item-2', 0.3, {
     color: "#EEE",
-    fontWeight: 600
+    fontWeight: 500,
+    padding: 0
   });
   var missionTween3 = TweenMax.from('#mission-item-3', 0.3, {
     color: "#EEE",
-    fontWeight: 600
+    fontWeight: 500,
+    padding: 0
   });
 
   var blockTween1 = TweenMax.to('#mission-color-block1', 0.3, {
@@ -286,16 +289,16 @@ $(function() {
 		<!-- End Features -->
 
 		<!-- Home Blockquote -->
-		<section id="blockquote" class="blockquote fullscreen-content divider-fullscreen">
+		<section id="blockquote" class="blockquote fullscreen-content">
   <div id="blockquote-animation">
     <img class="bottom-diagonal hidden-xs hidden-sm" src="media/img/bottom-diagonal.png" alt="">
   	<div class="fullscreen-image background-image-01" data-bottom-top="background-position-y: 200px" data-0-top="background-position-y: 0px" data-top-bottom="background-position-y: -200px"></div>
   	<div class="container padding-top-100 padding-bottom-100">
   		<div class="row">
   			<div class="col-lg-12">
-  				<blockquote class="text-white text-center">Technology Collective for People-Driven Code and Design.</blockquote>
+  				<blockquote class="text-white text-center">We're Data Automatica</blockquote>
 
-  				<h3 class="text-brand-main-color text-center">Technology Collective for People-Driven Code and Design.</h3>
+  				<h3 class="text-brand-main-color text-center"></h3>
   				<!--
   				<p class="text-center margin-top-40">
   					<a href="#_" class="btn btn-default" target="_blank">Read More</a>
@@ -336,20 +339,20 @@ $(function() {
 				<h1 class="text-center margin-top-50">What we do</h1>
 				<hr class="margin-bottom-50 border-brand-secondary-color">
 
-				<div class="margin-top-80 margin-bottom-50">
+				<div class="item-container">
 					<div class="row">
 						
 						<!-- Single Service -->
               
               
-    						<div class="col-lg-12 col-md-12 col-sm-12 padding-top-100">
+    						<div class="col-lg-12 col-md-12 col-sm-12 service-item">
     							<div class="row">
     								<div class="col-lg-3 col-md-3">
     									<i class="fa fa-desktop fa-10x text-brand-secondary-color margin-top-20"></i>
     								</div>
     								<div class="col-lg-9 col-md-9">
-    									<h3 class="text-main-brand-color light-bold text-right">Web Development & Data Services</h3>
-    									<h3 class="service-description text-right">We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets.</h3>
+    									<h3 class="text-main-brand-color light-bold">Web Development & Data Services</h3>
+    									<h3 class="service-description">We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets.</h3>
     								</div>
     							</div>
     						</div>
@@ -359,7 +362,7 @@ $(function() {
 						<!-- Single Service -->
               
               
-                <div class="col-lg-12 col-md-12 col-sm-12 padding-top-100">
+                <div class="col-lg-12 col-md-12 col-sm-12 service-item">
                   <div class="hidden-md hidden-lg">
                     <i class="fa fa-heart fa-10x text-brand-tertiary-color margin-top-20"></i>
                   </div>
@@ -379,14 +382,14 @@ $(function() {
 						<!-- Single Service -->
               
               
-    						<div class="col-lg-12 col-md-12 col-sm-12 padding-top-100">
+    						<div class="col-lg-12 col-md-12 col-sm-12 service-item">
     							<div class="row">
     								<div class="col-lg-3 col-md-3">
     									<i class="fa fa-eye fa-10x text-brand-secondary-color margin-top-20"></i>
     								</div>
     								<div class="col-lg-9 col-md-9">
-    									<h3 class="text-main-brand-color light-bold text-right">Digital Strategy & Technology Consulting</h3>
-    									<h3 class="service-description text-right">We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value.</h3>
+    									<h3 class="text-main-brand-color light-bold">Digital Strategy & Technology Consulting</h3>
+    									<h3 class="service-description">We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value.</h3>
     								</div>
     							</div>
     						</div>
@@ -459,10 +462,10 @@ $(function() {
             offset: -200,
           })
           .addTo(controller)
-          var tween = TweenMax.from(charEl, Math.random() * 2, {
+          var tween = TweenMax.from(charEl, Math.random() * 1, {
             opacity: 0,
             transform: "rotateY(90deg)"
-          }).delay(Math.random() * 3)
+          }).delay(Math.random() * 2)
 
           scene.setTween(tween)
         })
@@ -474,7 +477,7 @@ $(function() {
 		<!-- End Services -->
 
     <!-- Picture Divider -->
-    <section id="picture-divider-animation" class="blockquote fullscreen-content divider-fullscreen ">
+    <section id="picture-divider-animation" class="blockquote fullscreen-content">
   <img class="bottom-diagonal reversed-diagnonal hidden-xs hidden-sm" src="media/img/navbar-diagonal-custom-white.svg" alt="">
 	<div class="fullscreen-image background-image-02" data-bottom-top="background-position-y: 200px" data-0-top="background-position-y: 0px" data-top-bottom="background-position-y: -200px"></div>
 
@@ -488,15 +491,15 @@ $(function() {
     <script>
     $(function() {
       var controller = new ScrollMagic.Controller();
-      var tween = TweenMax.from('#picture-divider-animation', 1, {
-          transform: "translateX(-1999px)",
+      var tween = TweenMax.from('#picture-divider-animation', 0.5, {
+          transform: "rotateX(90deg)",
           opacity: 0
         });
 
         new ScrollMagic.Scene({
           triggerElement: '#picture-divider-animation',
           // reverse: false,
-          offset: -400,
+          offset: -200,
         })
         .setTween(tween)
         .addTo(controller)
@@ -508,7 +511,7 @@ $(function() {
     <!-- Clients -->
     <section id="clients" class="section-content main-background-color">
 <div id="clients-animation">
-  <div class="container margin-top-100 margin-bottom-100">
+  <div class="container margin-top-50 margin-bottom-100">
   		<div class="row">
   			<div class="col-lg-12">
           <h1 class="text-center margin-top-50">Our clients</h1>

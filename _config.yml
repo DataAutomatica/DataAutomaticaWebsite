@@ -80,8 +80,8 @@ mission_items:
 # -------------------------
 
 blockquote:
-   text: "Technology Collective for People-Driven Code and Design."
-   tagline: "Technology Collective for People-Driven Code and Design."
+   text: "We're Data Automatica"
+   tagline: ""
    button_text: "Read More"
    button_url: "#_"
 

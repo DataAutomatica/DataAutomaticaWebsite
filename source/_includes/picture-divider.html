@@ -1,4 +1,4 @@
-<section id="picture-divider-animation" class="blockquote fullscreen-content divider-fullscreen ">
+<section id="picture-divider-animation" class="blockquote fullscreen-content">
   <img class="bottom-diagonal reversed-diagnonal hidden-xs hidden-sm" src="media/img/navbar-diagonal-custom-white.svg" alt="">
 	<div class="fullscreen-image background-image-02" data-bottom-top="background-position-y: 200px" data-0-top="background-position-y: 0px" data-top-bottom="background-position-y: -200px"></div>
 
@@ -12,15 +12,15 @@
     <script>
     $(function() {
       var controller = new ScrollMagic.Controller();
-      var tween = TweenMax.from('#picture-divider-animation', 1, {
-          transform: "translateX(-1999px)",
+      var tween = TweenMax.from('#picture-divider-animation', 0.5, {
+          transform: "rotateX(90deg)",
           opacity: 0
         });
 
         new ScrollMagic.Scene({
           triggerElement: '#picture-divider-animation',
           // reverse: false,
-          offset: -400,
+          offset: -200,
         })
         .setTween(tween)
         .addTo(controller)
