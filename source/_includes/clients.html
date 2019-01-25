@@ -37,16 +37,16 @@
       let imageY = -(e.clientY - (e.target.getBoundingClientRect().top + (e.target.getBoundingClientRect().height / 2)))
 
       if (imageX > 0) {
-        imageX = Math.min(imageX, 75)
+        imageX = Math.min(imageX, 40)
 
       } else {
-        imageX = Math.max(imageX, -75)
+        imageX = Math.max(imageX, -40)
       }
 
       if (imageY > 0) {
-        imageY = Math.min(imageY, 75)
+        imageY = Math.min(imageY, 40)
       } else {
-        imageY = Math.max(imageY, -75)
+        imageY = Math.max(imageY, -40)
       }
       e.currentTarget.querySelector('img').style.transform = 'translate(' + imageX + 'px, ' + imageY + 'px) scale(1.5)'
     })
