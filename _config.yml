@@ -112,7 +112,7 @@ clients:
   - name: "The Intercept"
     icon: "intercept.svg"
     alticon: "intercept.png"
-    backgroundColor: "#FFE0B5"
+    backgroundColor: "#E3D7FF"
     link: "https://theintercept.com"
   - name: "ANHD"
     icon: "anhd-black.svg"
