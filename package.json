@@ -1,7 +1,7 @@
 {
   "name": "DataAutomatica",
   "version": "1.0.0",
-  "description": "Technology Collective for People-Centered Code and Design",
+  "description": "People-inspired code and design",
   "author": "Data Automatica",
   "devDependencies": {
     "grunt": "~0.4.1",
