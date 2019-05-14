@@ -8,7 +8,7 @@ name: 			  Data Automatica
 # -------------------------
 
 logo_regular: "icons/favicon.ico"
-logo_small_devices: "icons/favicon.ico"
+logo_small_devices: "icons/favicon-32x32.png"
 
 
 # Main Navigation Links
@@ -42,7 +42,7 @@ alt: "A cool rainbow colored computer in a dark room."
 #--------------------------
 
 mission_title: "Our mission"
-mission_description: "<h3>Our mission is to create nice things with <b>code</b>, <b>research</b>, and <b>design</b>.</h3><h4>And be nice people.</h4><h5>And afford NYC rent.</h5>"
+mission_description: "<h3>Our mission is to create nice things with <b>code</b>, <b>research</b>, and <b>design</b>.</h3><h3>And be nice people.</h3><h5>And afford NYC rent.</h5>"
 # mission_subcopy: "We provide:"
 # mission_items:
 #   - item: "A critical approach towards all decisions surrounding technology and data."
