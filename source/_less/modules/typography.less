@@ -57,20 +57,37 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
      font-family: @brand-main-font;
      font-weight: 300;
+     line-height: 150%;
+     margin-bottom: 20px;
 }
 
+// Headers
+// -------------------------
+
 h1 {
-     font-size: 40px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 38px;
+}
 
-  @media only screen and (min-width: @screen-sm-min) {
-    font-size: 30px;
-    line-height: 40px;
-  }
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 // Paragraphs
@@ -107,6 +124,10 @@ p {
 
 .text-black {
   color: @brand-black;
+}
+
+.text-dark-gray {
+  color: @brand-dark-gray;
 }
 
 .text-brand-secondary-color {

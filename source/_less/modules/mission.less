@@ -1,6 +1,5 @@
 #mission {
   overflow: hidden;
-  margin-bottom: 100px;
   padding-top: 100px;
 
   @media only screen and (min-width: @screen-sm-min) {
@@ -13,14 +12,13 @@
     padding-top: 100px;
   }
 
-  h1 {
-    font-size: 70px;
+  ul {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
   }
 
-  h2 {
-    line-height: 40px;
-    z-index: 2;
-  }
+
   .mission-item-container {
     display: flex;
     align-items: center;
@@ -37,7 +35,7 @@
     padding: 0 8px;
   }
   .color-block {
-    background-color: @brand-tertiary-color;
+    background-color: @brand-dark-gray;
     height: 100%;
     position: absolute;
     top: 0;

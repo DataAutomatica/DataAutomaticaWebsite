@@ -30,7 +30,7 @@ body {
     -webkit-border-radius: 0px;
             border-radius: 0px;
 
-    background: fade(@brand-main-color , 10);
+    background: fade(@brand-secondary-color , 10);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -38,10 +38,10 @@ body {
     -webkit-border-radius: 0px;
            border-radius: 0px;
 
-    background: @brand-main-color;
+    background: @brand-secondary-color;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: fade(@brand-main-color , 50);
+	background: fade(@brand-secondary-color , 50);
 }
 
 // General Styles
@@ -124,6 +124,12 @@ body {
 .border-brand-tertiary-color {
   border-color: @brand-tertiary-color;
 }
+
+
+.d-inline-block {
+  display: inline-block;
+}
+
 
 
 // Welcome Text

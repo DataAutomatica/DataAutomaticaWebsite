@@ -7,8 +7,8 @@ name: 			  Data Automatica
 # Main Logo
 # -------------------------
 
-logo_regular: "media/logo/logo_regular.png"
-logo_small_devices: "media/logo/logo_small.png"
+logo_regular: "icons/favicon.ico"
+logo_small_devices: "icons/favicon.ico"
 
 
 # Main Navigation Links
@@ -17,16 +17,16 @@ logo_small_devices: "media/logo/logo_small.png"
 navbar_links:
   - title: "Our Mission"
     url: "#mission"
-  - title: "What We Do"
-    url: "#services"
+  # - title: "What We Do"
+  #   url: "#services"
   - title: "Clients"
     url: "#clients"
   - title: "Contact"
     url: "#contact"
-  - title: "|"
-    url: "javascript:void(0)"
-  - title: "JustUs Automatica"
-    url: "https://justus.automatica.love"
+  # - title: "|"
+  #   url: "javascript:void(0)"
+  # - title: "JustUs Automatica"
+  #   url: "https://justus.automatica.love"
 
 # Navigation Background Color.
 # Options: caribbean-green, summer-sky, golden-poppy, deep-carmine-pink
@@ -36,18 +36,18 @@ navbar_color: "custom-color"
 # -------------------------
 
 title:            "Data / Automatica"
-tagline:      	  "A Technology Collective for People-Driven Code and Design."
+tagline:      	  "People-inspired code and design."
 alt: "A cool rainbow colored computer in a dark room."
 # Mission
 #--------------------------
 
 mission_title: "Our mission"
-mission_description: "Our mission is to facilitate community-led, people-centered, and sustainable outcomes with <b>code</b>, <b>research</b>, and <b>design</b>."
-mission_subcopy: "We provide:"
-mission_items:
-  - item: "A critical approach towards all decisions surrounding technology and data."
-  - item: "A commitment to community-led and justice-driven design solutions."
-  - item: "A collaborative, organized, and enjoyable process in everything we do."
+mission_description: "<h3>Our mission is to create nice things with <b>code</b>, <b>research</b>, and <b>design</b>.</h3><h4>And be nice people.</h4><h5>And afford NYC rent.</h5>"
+# mission_subcopy: "We provide:"
+# mission_items:
+#   - item: "A critical approach towards all decisions surrounding technology and data."
+#   - item: "A commitment to community-led and justice-driven design solutions."
+#   - item: "A collaborative and organized process."
 
 # features_thumbs:
 #   - title: "Clean Code"
@@ -88,21 +88,21 @@ blockquote:
 # Services
 # -------------------------
 
-services:
- - title: "Web Development & Data Services"
-   icon: "desktop"
-   description: "We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
- - title: "UX/UI Research & Design"
-   icon: "heart"
-   description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
- - title: "Digital Strategy & Technology Consulting"
-   icon: "eye"
-   description: "We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value."
+# services:
+#  - title: "Web Development & Data Services"
+#    icon: "desktop"
+#    description: "We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
+#  - title: "UX/UI Research & Design"
+#    icon: "heart"
+#    description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
+#  - title: "Digital Strategy & Technology Consulting"
+#    icon: "eye"
+#    description: "We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value."
 
 # Clients
 # -------------------------
 # https://image.online-convert.com/convert-to-svg
-clients_header: "Our clients"
+clients_header: "<h1>Our</h1> <h6>(amazing)</h6> <h1>clients</h1>"
 clients_subcopy: "We've worked some great people, teams, organizations."
 clients:
   - name: "Justworks"
@@ -161,7 +161,7 @@ work_thumbs:
 
 contact:
   title: "Get in touch!"
-  subcopy: "We're based out of Brooklyn, NY and love going for coffee."
+  subcopy: "We're based out of Brooklyn, NY."
   latitude: "37.3321722"
   longitude: "-122.0305748"
   marker_title: "Data Automatica"

@@ -2,7 +2,7 @@
 	<div id="services-animation" class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="text-black text-center margin-top-50">What we do</h1>
+				<h1 class="text-white text-center margin-top-50">What we do</h1>
 				<hr class="margin-bottom-50 border-brand-secondary-color">
 
 				<div class="item-container">
@@ -14,11 +14,11 @@
     						<div class="col-lg-12 col-md-12 col-sm-12 service-item">
     							<div class="row">
     								<div class="col-lg-3 col-md-3">
-    									<i class="fa fa-{{ service.icon }} fa-10x text-brand-fourth-color margin-top-20" aria-hidden="true"></i>
+    									<i class="fa fa-{{ service.icon }} fa-10x text-brand-secondary-color margin-top-20" aria-hidden="true"></i>
     								</div>
     								<div class="col-lg-9 col-md-9">
-    									<h3 class="text-black text-main-brand-color light-bold">{{ service.title }}</h3>
-    									<h3 class="text-black service-description">{{ service.description }}</h3>
+    									<h2 class="text-white light-bold">{{ service.title }}</h2>
+    									<!-- <h3 class="text-white service-description">{{ service.description }}</h3> -->
     								</div>
     							</div>
     						</div>
@@ -29,8 +29,8 @@
                   </div>
                   <div class="row">
                     <div class="col-lg-9 col-md-9">
-                      <h3 class="text-black text-main-brand-color light-bold">{{ service.title }}</h3>
-                      <h3 class="text-black service-description">{{ service.description }}</h3>
+                      <h2 class="text-white light-bold">{{ service.title }}</h2>
+                      <!-- <h3 class="text-white service-description">{{ service.description }}</h3> -->
                     </div>
                     <div class="hidden-sm hidden-xs col-md-offset-1 col-lg-2 col-md-2">
                       <i class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20" aria-hidden="true"></i>
@@ -47,7 +47,7 @@
 	</div>
 </section>
 
-<script>
+<!-- <script>
 $(function() {
   var controller = new ScrollMagic.Controller();
   var tween = TweenMax.from('#services-animation', 1, {
@@ -61,9 +61,9 @@ $(function() {
     .setTween(tween)
     .addTo(controller)
   })
-</script>
+</script> -->
 
-<script>
+<!-- <script>
 
   (function() {
     var mainController = new ScrollMagic.Controller();
@@ -116,4 +116,4 @@ $(function() {
       })
     }
   })()
-</script>
+</script> -->
