@@ -1,15 +1,14 @@
-# Custom vars
-# -------------------------
+--- # -------------------------
 
-current_version:  1.0.0
-name: 			  Data Automatica
+# Custom vars
+current_version: 1.0.0
+name: Data Automatica
 
 # Main Logo
 # -------------------------
 
 logo_regular: "icons/favicon.ico"
 logo_small_devices: "icons/favicon-32x32.png"
-
 
 # Main Navigation Links
 # -------------------------
@@ -35,8 +34,8 @@ navbar_color: "custom-color"
 # Image Hero
 # -------------------------
 
-title:            "Data / Automatica"
-tagline:      	  "People-inspired code and design."
+title: "Data / Automatica"
+tagline: "People-inspired code and design."
 alt: "A cool rainbow colored computer in a dark room."
 # Mission
 #--------------------------
@@ -75,29 +74,28 @@ mission_description: "<h3>Our mission is to create nice things with <b>code</b>,
 #     icon: "expand"
 #     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam a illum, ducimus quod impedit architecto distinctio dolorem amet dignissimos ad corrupti! Fugit aut earum in sit, placeat quis consequatur."
 
-
 # Blockquote
 # -------------------------
 
 blockquote:
-   text: "We're Data Automatica"
-   tagline: ""
-   button_text: "Read More"
-   button_url: "#_"
+  text: "We're Data Automatica"
+  tagline: ""
+  button_text: "Read More"
+  button_url: "#_"
 
 # Services
 # -------------------------
 
-# services:
-#  - title: "Web Development & Data Services"
-#    icon: "desktop"
-#    description: "We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
-#  - title: "UX/UI Research & Design"
-#    icon: "heart"
-#    description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
-#  - title: "Digital Strategy & Technology Consulting"
-#    icon: "eye"
-#    description: "We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value."
+services:
+  - title: "Web Development & Data Services"
+    icon: "desktop"
+    description: "We architect and maintain reliable, modern, and scalable full-stack web applications with tools like Ruby on Rails, Django, and React. We also build ways to analyze, manage, and beautifully visualize big datasets."
+  - title: "UX/UI Research & Design"
+    icon: "heart"
+    description: "Our approach to UX uses interviews, testing, and an iterative process that puts the needs, goals, and lived experiences of people first."
+  - title: "Digital Strategy & Technology Consulting"
+    icon: "eye"
+    description: "We advocate for technology decisions grounded in empathy, justice, and accountability, as well as advise on how to use technology in ways that minimize harm and maximize value."
 
 # Clients
 # -------------------------
@@ -123,38 +121,38 @@ clients:
 # -------------------------
 
 work_thumbs:
- - title: "Maxime Corporis Set"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-01.jpg"
- - title: "Veritatis Vel Recusandae"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-02.jpg"
- - title: "Consectetur Adipisicing"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-03.jpg"
- - title: "Asperiores Soluta"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-04.jpg"
- - title: "Officiis Aspernatur"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-05.jpg"
- - title: "Soluta Asperiores"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-06.jpg"
- - title: "Adipisicing Consectetur"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-07.jpg"
- - title: "Maxime Corporis Set"
-   description: "Fugit aut earum in sit, placeat quis consequatur."
-   url: "#_"
-   image: "media/img/work-08.jpg"
+  - title: "Maxime Corporis Set"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-01.jpg"
+  - title: "Veritatis Vel Recusandae"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-02.jpg"
+  - title: "Consectetur Adipisicing"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-03.jpg"
+  - title: "Asperiores Soluta"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-04.jpg"
+  - title: "Officiis Aspernatur"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-05.jpg"
+  - title: "Soluta Asperiores"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-06.jpg"
+  - title: "Adipisicing Consectetur"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-07.jpg"
+  - title: "Maxime Corporis Set"
+    description: "Fugit aut earum in sit, placeat quis consequatur."
+    url: "#_"
+    image: "media/img/work-08.jpg"
 
 # Contact
 # -------------------------
@@ -173,13 +171,13 @@ contact:
 # -------------------------
 
 # Dependencies
-highlighter: 		  pygments
+highlighter: pygments
 
 # Permalinks
-permalink: 		  none
+permalink: none
 
 # Server
 source: ./source
-destination: 	  ./automatica
-exclude: 		  [".gitignore", "Gruntfile.js", "node_modules", "package.json"]
-port: 			  1984
+destination: ./automatica
+exclude: [".gitignore", "Gruntfile.js", "node_modules", "package.json"]
+port: 1984

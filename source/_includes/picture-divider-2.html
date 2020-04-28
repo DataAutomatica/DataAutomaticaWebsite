@@ -1,22 +1,21 @@
-<section id="picture-divider-animation" class="blockquote fullscreen-content">
+<section id="picture-divider-animation-2" class="blockquote fullscreen-content">
   <img
-    class="bottom-diagonal hidden-xs hidden-sm"
+    class="bottom-diagonal reversed-diagnonal hidden-xs hidden-sm"
     src="media/img/navbar-diagonal-custom-gunmetal.svg"
     alt="a diagonal section divider"
   />
   <div
-    class="fullscreen-image background-image-02"
+    class="fullscreen-image background-image-03"
     data-bottom-top="background-position-y: 200px"
     data-0-top="background-position-y: 0px"
     data-top-bottom="background-position-y: -200px"
   ></div>
 
   <div class="container padding-top-100 padding-bottom-200"></div>
-
   <img
     class="top-diagonal hidden-xs hidden-sm"
-    src="media/img/navbar-diagonal-custom-davysgray.svg"
-    style="transform: rotate(180deg);"
+    src="media/img/navbar-diagonal-custom-gunmetal.svg"
+    style="transform: rotateX(180deg);"
     alt="a diagonal section divider"
   />
 </section>
@@ -24,13 +23,13 @@
 <script>
   $(function () {
     var controller = new ScrollMagic.Controller();
-    var tween = TweenMax.from("#picture-divider-animation", 1.2, {
+    var tween = TweenMax.from("#picture-divider-animation-2", 1.2, {
       transform: "rotateX(90deg)",
       opacity: 0,
     });
 
     new ScrollMagic.Scene({
-      triggerElement: "#picture-divider-animation",
+      triggerElement: "#picture-divider-animation-2",
       // reverse: false,
       offset: -400,
     })

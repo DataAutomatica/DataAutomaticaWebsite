@@ -1,119 +1,142 @@
-<section id="services" class="section-content main-background-color padding-top-50 padding-bottom-50">
-	<div id="services-animation" class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="text-white text-center margin-top-50">What we do</h1>
-				<hr class="margin-bottom-50 border-brand-secondary-color">
+<section
+  id="services"
+  class="section-content main-background-color padding-top-50 padding-bottom-50"
+>
+  <div id="services-animation" class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-white text-center margin-top-50">What we do</h1>
+        <hr class="margin-bottom-50 border-brand-secondary-color" />
 
-				<div class="item-container">
-					<div class="row">
-						{% for service in site.services %}
-						<!-- Single Service -->
-              {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-              {% if thecycle =='odd' %}
-    						<div class="col-lg-12 col-md-12 col-sm-12 service-item">
-    							<div class="row">
-    								<div class="col-lg-3 col-md-3">
-    									<i class="fa fa-{{ service.icon }} fa-10x text-brand-secondary-color margin-top-20" aria-hidden="true"></i>
-    								</div>
-    								<div class="col-lg-9 col-md-9">
-    									<h2 class="text-white light-bold">{{ service.title }}</h2>
-    									<!-- <h3 class="text-white service-description">{{ service.description }}</h3> -->
-    								</div>
-    							</div>
-    						</div>
-              {% else %}
-                <div class="col-lg-12 col-md-12 col-sm-12 service-item">
-                  <div class="hidden-md hidden-lg">
-                    <i class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20" aria-hidden="true"></i>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-9 col-md-9">
-                      <h2 class="text-white light-bold">{{ service.title }}</h2>
-                      <!-- <h3 class="text-white service-description">{{ service.description }}</h3> -->
-                    </div>
-                    <div class="hidden-sm hidden-xs col-md-offset-1 col-lg-2 col-md-2">
-                      <i class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20" aria-hidden="true"></i>
-                    </div>
-                  </div>
+        <div class="item-container">
+          <div class="row">
+            {% for service in site.services %}
+            <!-- Single Service -->
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {%
+            if thecycle =='odd' %}
+            <div class="col-lg-12 col-md-12 col-sm-12 service-item">
+              <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <i
+                    class="fa fa-{{ service.icon }} fa-10x text-brand-secondary-color margin-top-20"
+                    aria-hidden="true"
+                  ></i>
                 </div>
-              {% endif %}
-						<!-- End Single Service -->
-						{% endfor %}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="col-lg-9 col-md-9">
+                  <h2 class="text-white light-bold">{{ service.title }}</h2>
+                  <!-- <h3 class="text-white service-description">{{ service.description }}</h3> -->
+                </div>
+              </div>
+            </div>
+            {% else %}
+            <div class="col-lg-12 col-md-12 col-sm-12 service-item">
+              <div class="hidden-md hidden-lg">
+                <i
+                  class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-9">
+                  <h2 class="text-white light-bold">{{ service.title }}</h2>
+                  <!-- <h3 class="text-white service-description">{{ service.description }}</h3> -->
+                </div>
+                <div
+                  class="hidden-sm hidden-xs col-md-offset-1 col-lg-2 col-md-2"
+                >
+                  <i
+                    class="fa fa-{{ service.icon }} fa-10x text-brand-tertiary-color margin-top-20"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            <!-- End Single Service -->
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- <script>
-$(function() {
-  var controller = new ScrollMagic.Controller();
-  var tween = TweenMax.from('#services-animation', 1, {
-      opacity: 0
+<script>
+  $(function () {
+    var controller = new ScrollMagic.Controller();
+    var tween = TweenMax.from("#services-animation", 1, {
+      opacity: 0,
     });
 
     new ScrollMagic.Scene({
-      triggerElement: '#services',
+      triggerElement: "#services",
       offset: 0,
     })
-    .setTween(tween)
-    .addTo(controller)
-  })
-</script> -->
+      .setTween(tween)
+      .addTo(controller);
+  });
+</script>
 
-<!-- <script>
-
-  (function() {
+<script>
+  (function () {
     var mainController = new ScrollMagic.Controller();
     var controller = new ScrollMagic.Controller();
 
     var scene = new ScrollMagic.Scene({
-      triggerElement: '#services',
+      triggerElement: "#services",
       offset: 0,
     })
-    .addTo(mainController)
-    .on('start', () => {
-      tweenItUp()
-    })
-    .on('leave', () => {
-      controller = new ScrollMagic.Controller();
-    })
-
+      .addTo(mainController)
+      .on("start", () => {
+        tweenItUp();
+      })
+      .on("leave", () => {
+        controller = new ScrollMagic.Controller();
+      });
 
     var splitRandomNth = (str) => {
-      var getRandom = (max) => { return Math.floor(Math.random() * max) + 1  }
-      var a = str.split(' '), b = [];
-      while(a.length) b.push(a.splice(0, getRandom(4)).join(' '));
+      var getRandom = (max) => {
+        return Math.floor(Math.random() * max) + 1;
+      };
+      var a = str.split(" "),
+        b = [];
+      while (a.length) b.push(a.splice(0, getRandom(4)).join(" "));
       return b;
-    }
+    };
 
     function spanifyText(text) {
-    return splitRandomNth(text).map((character) => {
-        return "<span class='service-description-char'>"+character+"</span>"
-      }).join(' ')
+      return splitRandomNth(text)
+        .map((character) => {
+          return (
+            "<span class='service-description-char'>" + character + "</span>"
+          );
+        })
+        .join(" ");
     }
 
     function tweenItUp() {
-      document.querySelector('#services').querySelectorAll('.service-description').forEach((description) => {
-        const spannedText = spanifyText(description.textContent)
-        description.innerHTML = spannedText
+      document
+        .querySelector("#services")
+        .querySelectorAll(".service-description")
+        .forEach((description) => {
+          const spannedText = spanifyText(description.textContent);
+          description.innerHTML = spannedText;
 
-        description.querySelectorAll('.service-description-char').forEach((charEl) => {
-          var scene = new ScrollMagic.Scene({
-            triggerElement: description.parentElement,
-            offset: -200,
-          })
-          .addTo(controller)
-          var tween = TweenMax.from(charEl, Math.random() * 1, {
-            opacity: 0,
-            transform: "rotateY(90deg)"
-          }).delay(Math.random() * 2)
+          description
+            .querySelectorAll(".service-description-char")
+            .forEach((charEl) => {
+              var scene = new ScrollMagic.Scene({
+                triggerElement: description.parentElement,
+                offset: -200,
+              }).addTo(controller);
+              var tween = TweenMax.from(charEl, Math.random() * 1, {
+                opacity: 0,
+                transform: "rotateY(90deg)",
+              }).delay(Math.random() * 2);
 
-          scene.setTween(tween)
-        })
-      })
+              scene.setTween(tween);
+            });
+        });
     }
-  })()
-</script> -->
+  })();
+</script>
